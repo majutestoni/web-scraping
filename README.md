@@ -1,9 +1,35 @@
-# Awesome Project Build with TypeORM
+# Web Scrapring
 
-Steps to run this project:
+## Como utilizar o projeto em sua maquina
 
- - [puppetees] - comando - npm install puppeteer@10.4.0
+```bash
+ git clone https://github.com/majutestoni/web-scraping.git
+```
 
-1. Run `npm i` command
-2. Setup database settings inside `data-source.ts` file
-3. Run `npm start` command
+```bash
+ npm i
+```
+
+Necessario criar um database MariaDB ou Mysql como o nome "noticia", demais informações de banco de dados disponível em: src\database\data-source.ts, comando de build:
+
+```bash
+ npm start
+```
+
+#### Tabela Noticia
+
+| Parâmetro  | Tipo      | Descrição                      |
+| :--------- | :-------- | :----------------------------- |
+| `id`       | `int`     | **Obrigatório**. id da noticia |
+| `title`    | `varchar` | **Obrigatório**.               |
+| `subtitle` | `varchar` | **Obrigatório**.               |
+
+
+## Utilizado
+ - [Express](https://expressjs.com/pt-br/)
+ - [Typeorm](https://typeorm.io/)
+ - [Mysql2](https://www.npmjs.com/package/mysql2) - e MariaDB na workbench 
+ - [DBeaver](https://dbeaver.io/download/) - Como workbench
+ - [puppeteer](https://pptr.dev/) - utilizado versão 10.4.0
+ - [Node](https://nodejs.org/en) - v14.20.0
+
