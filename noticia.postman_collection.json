@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "16f79bfb-cafa-4c04-a069-fbe0eb02877f",
+		"name": "noticia",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27812666"
+	},
+	"item": [
+		{
+			"name": "post noticia",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"url\": \"https://g1.globo.com/mundo/noticia/2023/02/14/eua-dizem-que-outros-3-objetos-voadores-nao-eram-da-china.ghtml\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/noticia_g1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"noticia_g1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all noticias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/noticia_g1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"noticia_g1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
